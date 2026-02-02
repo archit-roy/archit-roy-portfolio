@@ -521,3 +521,101 @@ body.dark strong {
 html, body {
   overflow-x: hidden;
 }
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Global container padding */
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Header */
+  header {
+    padding: 14px 16px;
+  }
+
+  .nav {
+    gap: 16px;
+    font-size: 14px;
+  }
+
+  /* HERO SECTION */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding-top: 32px;
+  }
+
+  .hero-eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+
+  .hero h1 {
+    font-size: 34px;       /* ↓ from desktop */
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 100%;
+  }
+
+  .hero p {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  /* STUDENT SNAPSHOT */
+  .snapshot {
+    width: 100%;
+    margin-top: 16px;
+    padding: 18px;
+  }
+
+  .snapshot h3 {
+    font-size: 13px;
+  }
+
+  .snapshot p,
+  .snapshot li {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* PROJECTS */
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .project-card {
+    padding: 18px;
+  }
+
+  .project-card h4 {
+    font-size: 16px;
+  }
+
+  .project-card p {
+    font-size: 14px;
+  }
+
+  /* EXPERIENCE */
+  .experience p {
+    font-size: 14.5px;
+    line-height: 1.6;
+  }
+
+  /* CONTACT CARD */
+  .contact-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+}
