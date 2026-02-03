@@ -6,12 +6,13 @@
   <title>Archit Roy · Economics, Finance, Data</title>
 
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
-<body class="dark">
-  <!-- ================= HEADER ================= -->
-  <header class="site-header">
-    <div class="header-inner">
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
       <div class="logo">ARCHIT</div>
 
       <nav class="nav">
@@ -20,138 +21,130 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <!-- Toggle -->
-      <button id="themeToggle" aria-label="Toggle theme"></button>
+      <label class="theme-switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
     </div>
   </header>
 
-  <!-- ================= HERO ================= -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <span class="tagline">ECONOMICS · FINANCE · DATA</span>
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">ECONOMICS · FINANCE · DATA</p>
 
-      <h1>
-        Turning economic ideas<br />
-        into clear, data-driven stories.
-      </h1>
+        <h1>
+          Turning economic ideas<br />
+          into clear, data-driven stories.
+        </h1>
 
-      <p class="hero-subtext">
-        I’m <strong>Archit Roy</strong>, an Economics undergraduate based in Hyderabad,
-        India, interested in financial markets, research, and data analysis.
-      </p>
-    </div>
-
-    <!-- ===== STUDENT SNAPSHOT ===== -->
-    <aside class="snapshot">
-      <h3>Student snapshot</h3>
-
-      <p class="availability">
-        Available for internships and full-time opportunities
-      </p>
-
-      <a href="assets/Archit_Roy_Resume.pdf" target="_blank">
-        View resume (PDF)
-      </a>
-
-      <ul>
-        <li>
-          <span>Degree</span>
-          <span>B.A. Economics</span>
-        </li>
-        <li>
-          <span>University</span>
-          <span>ICFAI University</span>
-        </li>
-        <li>
-          <span>Location</span>
-          <span>Hyderabad, India</span>
-        </li>
-        <li>
-          <span>Focus</span>
-          <span>Markets, research, data analysis</span>
-        </li>
-      </ul>
-    </aside>
-  </section>
-
-  <!-- ================= PROJECTS ================= -->
-  <section id="projects" class="projects">
-    <h2>Selected projects</h2>
-
-    <div class="project-grid">
-      <article class="project-card">
-        <h4>Sensex & Nifty Market Analysis</h4>
-        <p>
-          Comparative analysis of India’s benchmark indices focusing on
-          price trends, volatility, and return behaviour using Excel and Power BI.
+        <p class="subtext">
+          I’m Archit Roy, an Economics undergraduate based in Hyderabad, India,
+          interested in financial markets, research, and data analysis.
         </p>
-      </article>
+      </div>
 
-      <article class="project-card">
-        <h4>Quant Stock Screener (SQL)</h4>
-        <p>
-          Built a rule-based equity screening system using SQL to filter
-          stocks based on valuation, momentum, and liquidity criteria.
+      <!-- STUDENT SNAPSHOT -->
+      <aside class="snapshot">
+        <h3>Student snapshot</h3>
+        <p class="availability">
+          Available for internships and full-time opportunities
         </p>
-      </article>
 
-      <article class="project-card">
-        <h4>Inflation & Cost of Living</h4>
-        <p>
-          Macroeconomic analysis of CPI trends and purchasing power changes
-          to understand inflation dynamics over time.
-        </p>
-      </article>
+        <a
+          href="assets/Archit_Roy_resume.pdf"
+          target="_blank"
+          rel="noopener"
+          class="resume-link"
+        >
+          View resume (PDF)
+        </a>
 
-      <article class="project-card">
-        <h4>Risk & Return Analysis</h4>
-        <p>
-          Studied diversification benefits and asset-level risk–return
-          trade-offs using historical market data.
-        </p>
-      </article>
+        <div class="snapshot-grid">
+          <span>Degree</span><strong>B.A. Economics</strong>
+          <span>University</span><strong>ICFAI University</strong>
+          <span>Location</span><strong>Hyderabad, India</strong>
+          <span>Focus</span><strong>Markets, research, data analysis</strong>
+        </div>
+      </aside>
     </div>
   </section>
 
-  <!-- ================= EXPERIENCE ================= -->
-  <section id="experience" class="experience">
-    <h2>Experience</h2>
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Selected projects</h2>
 
-    <div class="experience-item">
-      <h4>Market Research Data Analyst Intern — Edgitech (Remote)</h4>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Sensex & Nifty Market Analysis</h3>
+          <p>
+            Comparative analysis of India’s benchmark indices focusing on
+            price trends, volatility, returns, and correlations using Excel
+            and Power BI.
+          </p>
+        </div>
 
-      <p>
-        Conducted market and industry research to analyse trends, consumer behaviour,
-        and competitive positioning within the digital education space.
-      </p>
+        <div class="project-card">
+          <h3>Quant Stock Screener (SQL)</h3>
+          <p>
+            Built a rule-based equity screener using SQL to filter stocks
+            based on valuation, momentum, and liquidity criteria.
+          </p>
+        </div>
 
-      <p>
-        Worked extensively with secondary data sources, industry reports, and
-        publicly available datasets to identify demand patterns and growth opportunities.
-      </p>
+        <div class="project-card">
+          <h3>Inflation & Cost of Living</h3>
+          <p>
+            Macroeconomic analysis of CPI trends and purchasing power
+            dynamics to understand changes in cost of living over time.
+          </p>
+        </div>
 
-      <p>
-        Performed qualitative and quantitative analysis to support insight-driven
-        reporting and contributed to structured research documentation used for
-        strategic planning and decision-making.
-      </p>
+        <div class="project-card">
+          <h3>Risk & Return Analysis</h3>
+          <p>
+            Studied volatility, diversification benefits, and asset-level
+            risk-return trade-offs using historical market data.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ================= CONTACT ================= -->
-  <section id="contact" class="contact">
-    <h2>Contact</h2>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
 
-    <p>
-      <a href="mailto:archit.roy05@gmail.com">archit.roy05@gmail.com</a>
-    </p>
+      <div class="experience-block">
+        <h3>Market Research Data Analyst Intern — Edgitech (Remote)</h3>
+        <p>
+          Conducted market and industry research to analyze trends, consumer
+          behavior, and competitive positioning within the digital education
+          space. Worked with secondary data sources, industry reports, and
+          publicly available datasets to identify demand patterns and growth
+          opportunities.
+        </p>
+        <p>
+          Performed qualitative and quantitative analysis to support
+          insight-driven reporting and contributed to structured research
+          documentation used for strategic planning and decision-making.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <footer class="footer">
-    © 2026 Archit Roy
+  <!-- CONTACT -->
+  <footer id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>
+        <a href="mailto:archit.roy05@gmail.com">archit.roy05@gmail.com</a>
+      </p>
+      <p class="copyright">© 2026 Archit Roy</p>
+    </div>
   </footer>
-
-  <!-- ================= SCRIPT ================= -->
-  <script src="script.js"></script>
 </body>
 </html>
