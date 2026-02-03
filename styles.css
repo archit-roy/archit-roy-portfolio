@@ -619,3 +619,76 @@ html, body {
     border-radius: 16px;
   }
 }
+/* =========================
+   MOBILE – STUDENT SNAPSHOT FIX
+   ========================= */
+@media (max-width: 768px) {
+
+  .snapshot {
+    width: 100%;
+    margin: 24px 0 0;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(10px);
+  }
+
+  body.light .snapshot {
+    background: #f7f7f7;
+  }
+
+  .snapshot h3 {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    margin-bottom: 10px;
+  }
+
+  .snapshot .availability {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+
+  .snapshot a {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  /* Label–value rows */
+  .snapshot ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .snapshot li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 8px 0;
+    font-size: 14px;
+    line-height: 1.4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  body.light .snapshot li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .snapshot li span:first-child {
+    font-weight: 500;
+    opacity: 0.75;
+    min-width: 90px;
+  }
+
+  .snapshot li span:last-child {
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .snapshot li:last-child {
+    border-bottom: none;
+  }
+}
