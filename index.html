@@ -848,6 +848,57 @@
     color: var(--text-muted);
   }
 
+  /* ── Monogram Mark ── */
+  .hero-mark {
+    position: absolute;
+    top: 50%;
+    right: 8%;
+    transform: translateY(-50%);
+    width: clamp(260px, 30vw, 420px);
+    height: clamp(260px, 30vw, 420px);
+    opacity: 0;
+    animation: fadeIn 1.4s 1s ease forwards;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .mark-ring-outer {
+    animation: rotateSlow 40s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .mark-ring-mid {
+    animation: rotateSlow 28s linear infinite reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .mark-letters {
+    transition: fill 0.35s ease;
+  }
+  @keyframes rotateSlow {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+  /* light mode — darken the mark strokes */
+  html.light .hero-mark .mark-stroke   { stroke: var(--gold); }
+  html.light .hero-mark .mark-fill     { fill: var(--gold); }
+  html.light .hero-mark .mark-bg       { fill: var(--bg2); }
+
+  @media (max-width: 768px) {
+    .hero-mark {
+      position: relative;
+      top: auto; right: auto;
+      transform: none;
+      width: 160px; height: 160px;
+      margin: 0 auto 32px;
+      display: block;
+      opacity: 0;
+      animation: fadeIn 1s 0.3s ease forwards;
+    }
+    #hero {
+      align-items: flex-start;
+    }
+  }
+
   /* ── Animations ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(30px); }
@@ -1155,10 +1206,10 @@
   <div class="contact-inner">
     <div class="section-label">Get in touch</div>
     <h2 class="section-title reveal">Let's <em>Connect</em></h2>
-    <a href="/cdn-cgi/l/email-protection#117063727978653f637e68212451767c70787d3f727e7c" class="contact-email reveal"><span class="__cf_email__" data-cfemail="a6c7d4c5cecfd288d4c9df9693e6c1cbc7cfca88c5c9cb">[email&#160;protected]</span></a>
+    <a href="mailto:archit.roy05@gmail.com" class="contact-email reveal">archit.roy05@gmail.com</a>
     <div class="contact-links reveal reveal-delay-1">
       <a href="https://archit-roy.github.io/assets/Archit_Roy_resume.pdf" class="contact-link primary" target="_blank">Download Resume</a>
-      <a href="/cdn-cgi/l/email-protection#a3c2d1c0cbcad78dd1ccda9396e3c4cec2cacf8dc0ccce" class="contact-link">Send Email</a>
+      <a href="https://mail.google.com/mail/?view=cm&to=archit.roy05@gmail.com&su=Hello%20Archit&body=Hi%20Archit%2C%0A%0A" class="contact-link" target="_blank">Send Email</a>
     </div>
   </div>
 </section>
